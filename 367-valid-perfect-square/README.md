@@ -1,7 +1,7 @@
 # 367. Valid Perfect Square - LeetCode
 
-## Compilation:
+### Compilation:
 - `gcc perfect-square.c -o perfect-square.bin`
 
-## Usage:
+### Usage:
 - `./perfect-square.bin -n <number>`

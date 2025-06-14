@@ -1,4 +1,4 @@
-### Welcome to my Leetcode Repository
+# Welcome to my Leetcode Repository
 
 This repository contains all the scripts I've written to solve LeetCode challenges.
 
