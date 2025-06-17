@@ -1,0 +1,2 @@
+# Remove any binaries from the repository:
+*.bin
