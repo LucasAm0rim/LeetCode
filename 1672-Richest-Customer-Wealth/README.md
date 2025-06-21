@@ -11,9 +11,9 @@
 ### BETA v2.0
 - Now the full code is written and it is possible to run it standalone.
 
-- *Compilation:*
+- **Compilation:**
 - `gcc 1672.c -o 1672.bin`
 
-- *Usage:*
+- **Usage:**
 - `./1672.bin -a <Accounts> -s <AccountsSize> -c <AccountsColumnSize>`
 - `./1672.bin -a 1,2,3,4,5,6 -s 2 -c 3`
