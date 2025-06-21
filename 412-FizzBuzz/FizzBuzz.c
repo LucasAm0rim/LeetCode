@@ -14,11 +14,11 @@ char** fizzBuzz(int n, int* returnSize) {
     for (; i <= n; i++){
         FizzBuzz[i - 1] = calloc(WORD_LEN + 1, sizeof(char));
         if (i % 3 == 0 && i % 5 == 0){
-            FizzBuzz[i - 1] = "FizzBuzz";
+            strcpy(FizzBuzz[i - 1], "FizzBuzz");
         } else if (i % 3 == 0){
-            FizzBuzz[i - 1] = "Fizz";
+            strcpy(FizzBuzz[i - 1], "Fizz");
         } else if (i % 5 == 0){
-            FizzBuzz[i - 1] = "Buzz";
+            strcpy(FizzBuzz[i - 1], "Buzz");
         } else {
             sprintf(FizzBuzz[i - 1], "%d", i);
         }
