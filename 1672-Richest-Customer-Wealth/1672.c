@@ -7,7 +7,6 @@ int maximumWealth(int** accounts, int accountsSize, int accountsColSize) {
     int k = 0;
     int richest = 0;
     int wealth[51] = {0};
-    //int * wealth = calloc(accountsSize + 1, sizeof(int));
     
     for (i = 0; i < accountsSize; i++){
         for (j = 0; j < accountsColSize; j++){
@@ -43,6 +42,7 @@ int main(int argc, char *argv[]){
         return -1;
     }
 
+    // Allocating memory for each int that it will be inside the vector
     for (int i = 0; i < accountsSize; i++){
         accounts[i] = calloc(accountsColSize, sizeof(int));
         if (accounts[i] == NULL){
@@ -51,6 +51,7 @@ int main(int argc, char *argv[]){
         }
     }
 
+    // Inserting random numbers just for testing
     printf("Inserted Numbers: ");
     int N = 10;
     for (int i = 0; i < accountsSize; i++){
@@ -62,6 +63,12 @@ int main(int argc, char *argv[]){
     }
 
     richest = maximumWealth(accounts, accountsSize, accountsColSize);
+
+    // Cleanup
+    for (int i = 0; i < accountsSize; i++){
+        free(accounts[i]);
+    }
+    free(accounts);
 
     printf("\nRichest Customer: %d\n", richest);
     return 0;
