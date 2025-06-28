@@ -126,6 +126,7 @@ int main(int argc, char *argv[]){
             free(accounts[i]);
         }
         free(accounts);
+        free(arrayAccounts); 
    
         // Printing
         printf("Richest Customer: %d\n", richest);
